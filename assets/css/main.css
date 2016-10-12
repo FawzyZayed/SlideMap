@@ -1,0 +1,56 @@
+/*
+    Theme Name: SassDemo
+    Theme URI: https://github.com/FawzyZayed/SassDemo
+    Author: Fawzy
+    Author URI:Fawzy.info
+    Description: Custom Sass for New Website.
+    Version: 1.0.0
+    License: GNU General Public License v2 or later
+    License URI: http://www.gnu.org/licenses/gpl-2.0.html
+    Tags:New , Custom , Responsive , Bootstarp , Gulp , SCSS , HTML5 , IconFont , Quality , Typography , Javascript , CSS , GoogleFont
+    Text Domain: Fawzy
+
+    This theme, is licensed under the GPL.
+    Use it to make something cool, have fun, and share what you've learned with others.
+*/
+@import url("http://fonts.googleapis.com/css?family=Open+Sans|Exo:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px; }
+
+.slideMap {
+  position: relative;
+  overflow: hidden; }
+  .slideMap .slideItem {
+    width: 16.66667%; }
+  .slideMap .slideNav a {
+    font-size: 20px;
+    color: #000;
+    position: absolute;
+    display: block; }
+  .slideMap .slideNav a.slideRight {
+    right: 0; }
+  .slideMap .slideNav a.slideLeft {
+    left: 0; }
+  .slideMap .slideNav a {
+    position: absolute;
+    display: block;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    top: 0;
+    bottom: 0;
+    width: 20%;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    opacity: 0;
+    z-index: 2; }
+    .slideMap .slideNav a.slideRight {
+      left: 0; }
+    .slideMap .slideNav a.slideLeft {
+      right: 0; }
+    .slideMap .slideNav a:hover, .slideMap .slideNav a:active {
+      opacity: 1.0; }

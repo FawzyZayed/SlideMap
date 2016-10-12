@@ -1,0 +1,54 @@
+
+// import SCSS file
+@import "reset";
+
+// Start Style
+body{
+    font-family: $GlobalFFamily;
+    font-size: $GlobalFSize;
+}
+.slideMap{
+    position: relative;
+    overflow: hidden;
+    
+    .slideItem{
+        //display: none;
+        width: percentage(1/6);
+    }
+    .slideNav{
+        a{font-size: 20px;color: #000;position: absolute;display: block;}
+        a.slideRight{right: 0;}
+        a.slideLeft{left: 0;}
+    }
+    .slideNav{
+        a{
+            position: absolute;
+            display: block;
+            box-sizing: border-box;
+            border: none;
+            outline: none;
+            top: 0;
+            bottom: 0;
+            width: 20%;
+            background-color: rgba(0, 0, 0, 0.3);
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            text-align:center;
+            opacity: 0;
+            z-index: 2;
+            &.slideRight{
+                left: 0;
+            }
+            &.slideLeft{
+               right: 0; 
+            }
+            &:hover,&:active{
+                opacity: 1.0;
+            }
+        }
+    }
+}
+
+
+
