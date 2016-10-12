@@ -18,39 +18,26 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 18px; }
 
-.slideMap {
-  position: relative;
-  overflow: hidden; }
-  .slideMap .slideItem {
-    width: 16.66667%; }
-  .slideMap .slideNav a {
-    font-size: 20px;
-    color: #000;
-    position: absolute;
-    display: block; }
-  .slideMap .slideNav a.slideRight {
-    right: 0; }
-  .slideMap .slideNav a.slideLeft {
-    left: 0; }
-  .slideMap .slideNav a {
-    position: absolute;
-    display: block;
-    box-sizing: border-box;
-    border: none;
-    outline: none;
-    top: 0;
-    bottom: 0;
-    width: 20%;
-    background-color: rgba(0, 0, 0, 0.3);
-    color: #fff;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    opacity: 0;
-    z-index: 2; }
-    .slideMap .slideNav a.slideRight {
-      left: 0; }
-    .slideMap .slideNav a.slideLeft {
-      right: 0; }
-    .slideMap .slideNav a:hover, .slideMap .slideNav a:active {
-      opacity: 1.0; }
+.slidewarp .slideMap {
+  width: 100%;
+  overflow: hidden;
+  height: 426px; }
+  .slidewarp .slideMap .slideItem {
+    width: 100%;
+    display: none;
+    float: left;
+    height: 426px; }
+
+.slidewarp .slideNav a {
+  padding: 5px 10px;
+  background: #f0f0f0;
+  margin-top: 30px;
+  text-decoration: none;
+  display: inline-block;
+  color: #666; }
+  .slidewarp .slideNav a.slideRight {
+    float: right; }
+  .slidewarp .slideNav a.slideLeft {
+    float: left; }
+  .slidewarp .slideNav a:hover, .slidewarp .slideNav a:active {
+    background: #ddd; }
