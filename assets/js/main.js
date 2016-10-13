@@ -2,7 +2,7 @@ sliderInt = 1;
 sliderNext = 2;
 
 $(document).ready(function(){
-    $(".slideMap > .slideItem.1").fadeIn(300);
+    $(".slideMap > .slideItem:nth-child(1)").fadeIn(300);
     startSlider();
 });
 
@@ -14,7 +14,7 @@ function startSlider(){
             sliderInt = 1;
         }
         $(".slideMap > .slideItem").fadeOut(300);
-        $(".slideMap > .slideItem." + sliderNext).fadeIn(300);
+        $(".slideMap > .slideItem:nth-child("+sliderNext+")").fadeIn(300);
         sliderInt = sliderNext;
         sliderNext = sliderNext +1;
         
@@ -31,7 +31,7 @@ function next(){
 }
 
 function stopLoop(){
-    window.clearInterval(loop)
+    window.clearInterval(loop);
 }
 
 function showSlide(Id){
@@ -42,7 +42,7 @@ function showSlide(Id){
         Id=count;
     }
     $(".slideMap > .slideItem").fadeOut(300);
-    $(".slideMap > .slideItem." + Id).fadeIn(300);
+    $(".slideMap > .slideItem:nth-child("+Id+")").fadeIn(300);
     sliderInt = Id;
     sliderNext = Id +1;
     startSlider();
