@@ -8,3 +8,4 @@ composer.phar
 Homestead.yaml
 Homestead.json
 .env
+/assets/scss
